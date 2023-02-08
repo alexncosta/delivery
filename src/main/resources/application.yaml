@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://${APP_DELIVERY_IP_CONTAINER}:${APP_DELIVERY_DB_PORT}/${APP_DELIVERY_DB}?createDatabaseIfNotExist=true
+    username: ${APP_DELIVERY_DB_USER}
+    password: ${APP_DELIVERY_DB_PASSWORD}
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: false
